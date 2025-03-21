@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
-import { DashboardItemComponent } from '../dashboard-item/dashboard-item.component';
-import { DashboardGraphicComponent } from '../dashboard-graphic/dashboard-graphic.component';
-import { DashboardTodoComponent } from '../dashboard-todo/dashboard-todo.component';
+import { DashboardItemComponent } from './dashboard-item/dashboard-item.component';
+import { DashboardGraphicComponent } from './dashboard-graphic/dashboard-graphic.component';
+import { DashboardTodoComponent } from './dashboard-todo/dashboard-todo.component';
 @Component({
   selector: 'app-dashboard',
   standalone: true,
