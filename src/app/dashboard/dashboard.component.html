@@ -1,7 +1,11 @@
 <div id="dashboard">
-  <app-dashboard-item [currentStatus]="currentStatus"/>
-
-  <app-dashboard-graphic [dummyTrafficData]="dummyTrafficData" [maxTraffic]="maxTraffic"/>
-
-  <app-dashboard-todo/>
+  <app-dashboard-wrapper [image]="{src: 'status.png', alt:'A signal symbol'}" title="Server Status">
+    <app-dashboard-item [currentStatus]="currentStatus"/>
+  </app-dashboard-wrapper>
+    <app-dashboard-wrapper [image]="{src: 'globe.png', alt:'A signal symbol'}" title="Traffic">
+      <app-dashboard-graphic [dummyTrafficData]="dummyTrafficData" [maxTraffic]="maxTraffic"/>
+    </app-dashboard-wrapper>
+    <app-dashboard-wrapper [image]="{src: 'list.png', alt:'A signal symbol'}" title="Support Tickets">
+      <app-dashboard-todo/>
+    </app-dashboard-wrapper>
 </div>

@@ -1,11 +1,13 @@
 import { Component, Input } from '@angular/core';
+import {DashboardWrapperComponent} from './dashboard-wrapper/dashboard-wrapper.component';
 import { DashboardItemComponent } from './dashboard-item/dashboard-item.component';
 import { DashboardGraphicComponent } from './dashboard-graphic/dashboard-graphic.component';
 import { DashboardTodoComponent } from './dashboard-todo/dashboard-todo.component';
+
 @Component({
   selector: 'app-dashboard',
   standalone: true,
-  imports: [DashboardItemComponent, DashboardGraphicComponent, DashboardTodoComponent],
+  imports: [DashboardItemComponent, DashboardGraphicComponent, DashboardTodoComponent, DashboardWrapperComponent],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.css'
 })
