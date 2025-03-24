@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DashboardTodoComponent } from './dashboard-todo.component';
+import { TicketsComponent } from './tickets.component';
 
-describe('DashboardTodoComponent', () => {
-  let component: DashboardTodoComponent;
-  let fixture: ComponentFixture<DashboardTodoComponent>;
+describe('TicketsComponent', () => {
+  let component: TicketsComponent;
+  let fixture: ComponentFixture<TicketsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [DashboardTodoComponent]
+      imports: [TicketsComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(DashboardTodoComponent);
+    fixture = TestBed.createComponent(TicketsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
